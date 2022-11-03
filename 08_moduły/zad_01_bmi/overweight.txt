@@ -1,0 +1,1 @@
+print("Masz nadwagę. Skonsultuj się z lekarzem lub dietetykiem")

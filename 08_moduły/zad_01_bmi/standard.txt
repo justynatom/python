@@ -1,0 +1,1 @@
+print("Twoja waga jest w normie. Tak trzymaj!")
