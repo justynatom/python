@@ -1,1 +1,1 @@
-print("Masz niedowagę. Skonsultuj się z lekarzem, ponieważ możesz mieć problemy ze zdrowiem")
+Masz niedowagę. Skonsultuj się z lekarzem, ponieważ możesz mieć problemy ze zdrowiem

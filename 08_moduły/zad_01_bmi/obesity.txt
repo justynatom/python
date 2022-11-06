@@ -1,1 +1,1 @@
-print("Skonsultuj się plinie z lekarzem lub dietetykiem")
+Skonsultuj się plinie z lekarzem lub dietetykiem

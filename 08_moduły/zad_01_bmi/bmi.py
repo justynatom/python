@@ -3,9 +3,7 @@ def get_user_params():
     w = float(input("Weight[kg]: "))
     return h, w
 
-def calculate_bmi():
-    h = float(input('Height[m]:'))
-    w = float(input("Weight[kg]: "))
+def calculate_bmi(h, w):
     bmi = w / (h ** 2)
     print('BMI result:', round(bmi, 2))
     return bmi
@@ -28,6 +26,6 @@ def main():
     status = get_bmi_state(result_bmi)
     print(status)
 
-if __name__ =="__main":
+if __name__ =="__main__":
     main()
 

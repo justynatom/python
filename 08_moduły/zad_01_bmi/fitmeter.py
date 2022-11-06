@@ -1,11 +1,11 @@
 from bmi import calculate_bmi, get_bmi_state
 
 def open_file(filename):
-    with open(filename) as file:
-        return file.readlines()
+    with open(filename, encoding="utf-8") as file:
+        return file.readline()
 
 def main():
-    h = float(input('Height[m]:'))
+    h = float(input('Height[m]: '))
     w = float(input("Weight[kg]: "))
 
     bmi = calculate_bmi(h, w)
@@ -17,6 +17,6 @@ def main():
 
 
 
-if __name__ =="__main":
+if __name__ =="__main__":
     main()
 
