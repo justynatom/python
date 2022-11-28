@@ -3,21 +3,21 @@ import unittest
 from student import Student
 
 class TestStudent(unittest.TestCase):
-    def setUp(self) -> None:
-        print("***setUp***")
+    # def setUp(self) -> None:
+    #     print("***setUp***")
 
     @classmethod
     def setUpClass(cls):
-        print("------setupclass--------\n")
+        print("----setupclass----\n")
         cls.studentA = Student('ana', 'smith', 4.6, None)
 
 
     def test_email_on_change_name(self):
         studentA = Student('ana','smith', 4.7, None)
-        self.assertEqual(cls.studentA.email, 'ana.smith@university.com')
+        self.assertEqual(self.studentA.email, 'ana.smith@university.com')
 
-        cls.studentA.name = 'anna'
-        self.assertEqual(cls.studentA.email, 'anna.smith@university.com')
+        self.studentA.name = 'anna'
+        self.assertEqual(self.studentA.email, 'anna.smith@university.com')
 
 
     def test_fullname_on_lastname_change(self):
@@ -32,14 +32,15 @@ class TestStudent(unittest.TestCase):
         student_ungranted = Student('jon', 'Snow', 3.7, None)
 
         student_granted.grant_scholarship()
-        self.assertTrue(student_granted, True)
+        self.assertEqual(student_granted.scholarship, True)
 
         student_ungranted.grant_scholarship()
-        self.assertFalse(student_ungranted)
+        self.assertEqual(student_ungranted.scholarship, False)
 
 
-    def tearDown(self):
-        print()
+    @classmethod
+    def tearDownClass(cls):
+        print('*-*-*-tearDown-*-*-*')
 
 
 if __name__ == "__main__":
