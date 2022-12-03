@@ -20,10 +20,15 @@ def show(quote):
 def main():
     quotes= open_file()
     quote=get_random_quote(quotes)
-
+    print(type(quote))
+    print(type(get_random_quote(quotes)))
     show(quote)
 
-main()
+#main()
+#get_random_quote(list_of_quotes)
+
+# lista = ['dom', 'kot', 'pies', 'rybka']
+# pierwszy_element = quotes[0]
 
 
 
